@@ -3,7 +3,7 @@ let currentLang = localStorage.getItem('selectedLanguage') || 'en';
 
 async function loadTranslations() {
     try {
-        const response = await fetch('/js/translations.json');
+        const response = await fetch('translations.json');
         translations = await response.json();
         return translations;
     } catch (error) {
