@@ -1,0 +1,182 @@
+{
+    "en": {
+        "nav": {
+            "services": "Services",
+            "howItWorks": "How It Works",
+            "courses": "Courses",
+            "about": "About"
+        },
+        "hero": {
+            "title": "Connect with Professional Technicians",
+            "subtitle": "Find skilled professionals for all your service needs",
+            "findProfessional": "Find a Professional",
+            "becomeTechnician": "Become a Technician"
+        },
+        "services": {
+            "carpentry": {
+                "title": "Carpentry",
+                "description": "Expert woodworking and furniture making services"
+            },
+            "plumbing": {
+                "title": "Plumbing",
+                "description": "Professional plumbing and pipe installation"
+            },
+            "electrical": {
+                "title": "Electrical",
+                "description": "Safe and reliable electrical services"
+            },
+            "mechanical": {
+                "title": "Mechanical",
+                "description": "Precision mechanical repairs and maintenance"
+            }
+        },
+        "app": {
+            "android": "Android",
+            "ios": "iOS"
+        },
+        "howItWorks": {
+            "title": "How It Works",
+            "subtitle": "Simple steps to get the service you need",
+            "steps": {
+                "requestService": {
+                    "title": "Request a Service",
+                    "description": "Download our app and create a service request. Specify your needs, location, and preferred time. Our system will match you with qualified technicians in your area."
+                },
+                "chooseTechnician": {
+                    "title": "Choose Your Technician",
+                    "description": "Review profiles of available technicians, including their ratings, experience, and previous work. Select the professional that best matches your requirements."
+                },
+                "getJobDone": {
+                    "title": "Get the Job Done",
+                    "description": "Your chosen technician will arrive at the scheduled time. They'll complete the work professionally and ensure your complete satisfaction with the service."
+                },
+                "rateReview": {
+                    "title": "Rate and Review",
+                    "description": "After the service is completed, rate your experience and leave a review. Your feedback helps maintain quality standards and assists other users in making informed decisions."
+                }
+            }
+        },
+        "about": {
+            "title": "About ServiceKit",
+            "subtitle": "Connecting skilled professionals with those who need them",
+            "mission": {
+                "title": "Our Mission",
+                "description": "To revolutionize the service industry by creating a seamless platform that connects skilled professionals with clients, ensuring quality service delivery and professional growth."
+            },
+            "vision": {
+                "title": "Our Vision",
+                "description": "To become the world's most trusted platform for professional services, empowering technicians and delighting customers through innovation and excellence."
+            },
+            "team": {
+                "title": "Our Leadership Team",
+                "members": {
+                    "ceo": {
+                        "name": "Mohamed Soliman",
+                        "role": "CEO & Founder",
+                        "bio": "experience in the service industry, Soliman leads our company with vision and innovation."
+                    },
+                    "cto": {
+                        "name": "Mohamed El-Bagoury",
+                        "role": "CTO",
+                        "bio": "El-Bagoury ensures smooth operations and maintains the highest standards of service quality."
+                    },
+                    "operations": {
+                        "name": "Shahd Yassin",
+                        "role": "Head of Operations",
+                        "bio": "Shahd brings technical expertise and innovation to drive our platform's development and growth."
+                    }
+                }
+            }
+        }
+    },
+    "ar": {
+        "nav": {
+            "services": "الخدمات",
+            "howItWorks": "كيف يعمل",
+            "courses": "الدورات",
+            "about": "من نحن"
+        },
+        "hero": {
+            "title": "تواصل مع الفنيين المحترفين",
+            "subtitle": "ابحث عن محترفين ماهرين لجميع احتياجاتك",
+            "findProfessional": "ابحث عن محترف",
+            "becomeTechnician": "كن فنيًا"
+        },
+        "services": {
+            "carpentry": {
+                "title": "النجارة",
+                "description": "خدمات النجارة وصناعة الأثاث"
+            },
+            "plumbing": {
+                "title": "السباكة",
+                "description": "خدمات السباكة وتركيب الأنابيب"
+            },
+            "electrical": {
+                "title": "الكهرباء",
+                "description": "خدمات كهربائية آمنة وموثوقة"
+            },
+            "mechanical": {
+                "title": "الميكانيكا",
+                "description": "إصلاحات وصيانة ميكانيكية دقيقة"
+            }
+        },
+        "app": {
+            "android": "أندرويد",
+            "ios": "آيفون"
+        },
+        "howItWorks": {
+            "title": "كيف يعمل",
+            "subtitle": "خطوات بسيطة للحصول على الخدمة التي تحتاجها",
+            "steps": {
+                "requestService": {
+                    "title": "طلب خدمة",
+                    "description": "قم بتنزيل تطبيقنا وإنشاء طلب خدمة. حدد احتياجاتك وموقعك والوقت المفضل. سيقوم نظامنا بمطابقتك مع الفنيين المؤهلين في منطقتك."
+                },
+                "chooseTechnician": {
+                    "title": "اختر الفني",
+                    "description": "راجع ملفات الفنيين المتاحين، بما في ذلك تقييماتهم وخبراتهم وأعمالهم السابقة. اختر المحترف الذي يناسب متطلباتك بشكل أفضل."
+                },
+                "getJobDone": {
+                    "title": "إنجاز المهمة",
+                    "description": "سيصل الفني المختار في الوقت المحدد. سيكمل العمل باحترافية ويضمن رضاك التام عن الخدمة."
+                },
+                "rateReview": {
+                    "title": "التقييم والمراجعة",
+                    "description": "بعد اكتمال الخدمة، قم بتقييم تجربتك وترك مراجعة. تساعد ملاحظاتك في الحفاظ على معايير الجودة ومساعدة المستخدمين الآخرين في اتخاذ قرارات مستنيرة."
+                }
+            }
+        },
+        "about": {
+            "title": "عن سيرفيس كيت",
+            "subtitle": "ربط المحترفين المهرة مع من يحتاجونهم",
+            "mission": {
+                "title": "مهمتنا",
+                "description": "ثورة في صناعة الخدمات من خلال إنشاء منصة سلسة تربط بين المحترفين المهرة والعملاء، مما يضمن تقديم خدمة عالية الجودة ونمو مهني مستمر."
+            },
+            "vision": {
+                "title": "رؤيتنا",
+                "description": "أن نصبح المنصة الأكثر موثوقية في العالم للخدمات المهنية، مما يمكن الفنيين ويسعد العملاء من خلال الابتكار والتميز."
+            },
+            "team": {
+                "title": "فريق القيادة",
+                "members": {
+                    "ceo": {
+                        "name": "محمد سليمان",
+                        "role": "الرئيس التنفيذي والمؤسس",
+                        "bio": "خبرة في صناعة الخدمات، يقود سليمان شركتنا برؤية وابتكار."
+                    },
+                    "cto": {
+                        "name": "محمد الباجوري",
+                        "role": "مدير التكنولوجيا",
+                        "bio": "يضمن الباجوري العمليات السلسة ويحافظ على أعلى معايير جودة الخدمة."
+                    },
+                    "operations": {
+                        "name": "شهد ياسين",
+                        "role": "رئيس العمليات",
+                        "bio": "تجلب شهد الخبرة التقنية والابتكار لدفع تطوير ونمو منصتنا."
+                    }
+                }
+            }
+        }
+    }
+} 
