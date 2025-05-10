@@ -15,57 +15,65 @@ let services = [
 
 // Initialize the scene
 async function init() {
-    // Wait for translations to load
-    await loadTranslations();
-    
-    // Create scene
-    scene = new THREE.Scene();
-    
-    // Create camera
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 7;
-    
-    // Create renderer
-    renderer = new THREE.WebGLRenderer({ 
-        antialias: true,
-        alpha: true
-    });
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x000000, 1);
-    
-    // Get container and check if it exists
-    const container = document.getElementById('scene-container');
-    if (container) {
-        container.appendChild(renderer.domElement);
+    try {
+        // Wait for translations to load
+        const loadedTranslations = await loadTranslations();
+        if (!loadedTranslations) {
+            console.error('Failed to load translations');
+            return;
+        }
         
-        // Add lights
-        const ambientLight = new THREE.AmbientLight(0x404040, 2);
-        scene.add(ambientLight);
+        // Create scene
+        scene = new THREE.Scene();
         
-        const directionalLight = new THREE.DirectionalLight(0x00ffff, 2);
-        directionalLight.position.set(5, 3, 5);
-        scene.add(directionalLight);
+        // Create camera
+        camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 7;
+        
+        // Create renderer
+        renderer = new THREE.WebGLRenderer({ 
+            antialias: true,
+            alpha: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x000000, 1);
+        
+        // Get container and check if it exists
+        const container = document.getElementById('scene-container');
+        if (container) {
+            container.appendChild(renderer.domElement);
+            
+            // Add lights
+            const ambientLight = new THREE.AmbientLight(0x404040, 2);
+            scene.add(ambientLight);
+            
+            const directionalLight = new THREE.DirectionalLight(0x00ffff, 2);
+            directionalLight.position.set(5, 3, 5);
+            scene.add(directionalLight);
 
-        // Add point lights for better illumination
-        const pointLight1 = new THREE.PointLight(0x00ffff, 1.5);
-        pointLight1.position.set(5, 5, 5);
-        scene.add(pointLight1);
+            // Add point lights for better illumination
+            const pointLight1 = new THREE.PointLight(0x00ffff, 1.5);
+            pointLight1.position.set(5, 5, 5);
+            scene.add(pointLight1);
 
-        const pointLight2 = new THREE.PointLight(0x0088ff, 1.5);
-        pointLight2.position.set(-5, -5, -5);
-        scene.add(pointLight2);
-        
-        // Create planet and atmosphere
-        createPlanet();
-        createServiceMeteors();
-        createParticles();
-        
-        // Add event listeners
-        window.addEventListener('resize', onWindowResize);
-        document.addEventListener('mousemove', onMouseMove);
-        
-        // Start animation
-        animate();
+            const pointLight2 = new THREE.PointLight(0x0088ff, 1.5);
+            pointLight2.position.set(-5, -5, -5);
+            scene.add(pointLight2);
+            
+            // Create planet and atmosphere
+            createPlanet();
+            createServiceMeteors();
+            createParticles();
+            
+            // Add event listeners
+            window.addEventListener('resize', onWindowResize);
+            document.addEventListener('mousemove', onMouseMove);
+            
+            // Start animation
+            animate();
+        }
+    } catch (error) {
+        console.error('Error initializing scene:', error);
     }
 }
 
@@ -210,6 +218,11 @@ function createParticles() {
 // Create service meteors
 function createServiceMeteors() {
     const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+    
+    if (!translations || !translations[currentLang]) {
+        console.error('Translations not loaded for language:', currentLang);
+        return;
+    }
     
     services.forEach((service, index) => {
         const serviceGroup = new THREE.Group();
